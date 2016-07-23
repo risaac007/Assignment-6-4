@@ -1,0 +1,140 @@
+# Assignment-6-4
+
+Abstract class AbstractDemo
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication66;
+
+/**
+ *
+ * @author hp1
+ */
+public abstract class AbstractDemo {
+
+    abstract void name(String s);
+
+    abstract void rollno(int i);
+
+    abstract void regno(String h);
+
+}
+
+
+
+
+Student1.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication66;
+
+/**
+ *
+ * @author hp1
+ */
+public class Student1 extends AbstractDemo {
+
+    @Override
+    void name(String s) {
+        System.out.println("The name of the student is " +s);
+    }
+
+    @Override
+    void rollno(int i) {
+        System.out.println("The Roll no is "+i);
+    }
+
+    @Override
+    void regno(String h) {
+        System.out.println("The reg no is "+h);
+    }
+    
+    
+    
+    
+}
+
+
+
+Student2.java
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication66;
+
+/**
+ *
+ * @author hp1
+ */
+public class Student2 extends AbstractDemo{
+
+    @Override
+    void name(String s) {
+        System.out.println("The name of the student is " +s);
+    }
+
+    @Override
+    void rollno(int i) {
+        System.out.println("The Roll no is "+i);
+        
+        
+    }
+    @Override
+    void regno(String h) {
+        System.out.println("The reg no is "+h);
+       
+    }
+    
+    
+    
+}
+
+
+
+Main method
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication66;
+
+/**
+ *
+ * @author hp1
+ */
+public class JavaApplication66 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Student1 s1=new Student1();
+        Student2 s2=new Student2();
+        s1.name("Reuben");
+        s1.rollno(100);
+        s1.regno("UR14CS263");
+        s2.name("Acad");
+        s2.rollno(200);
+        s2.regno("ISH64");
+        
+    }
+    
+}
